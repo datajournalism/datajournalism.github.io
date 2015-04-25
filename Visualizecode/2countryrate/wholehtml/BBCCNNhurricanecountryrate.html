@@ -1,0 +1,133 @@
+ 
+  <html>
+  <head>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type="text/javascript">
+      google.load("visualization", "1", {packages:["geochart"]});
+      google.setOnLoadCallback(drawRegionsMap);
+
+      function drawRegionsMap() {
+
+        var data = google.visualization.arrayToDataTable([
+			['Country', 'Reportnum'],
+['US', 555],
+['China', 111],
+['Japan', 61],
+['Taiwan', 53],
+['Caribbean', 52],
+['Philippines', 46],
+['Cuba', 27],
+['Mexico', 25],
+['Bermuda', 24],
+['South Korea', 23],
+['Haiti', 23],
+['Burma', 23],
+['Jamaica', 22],
+['Vietnam', 20],
+['India', 16],
+['Australia', 16],
+['Madagascar', 15],
+['Bahamas', 14],
+['Grenada', 14],
+['Bangladesh', 13],
+['North Korea', 13],
+['Gulf of Mexico', 12],
+['New Zealand', 11],
+['Russia', 10],
+['Fiji', 10],
+['Dominica', 9],
+['Canada', 8],
+['Pakistan', 8],
+['UK', 8],
+['Belize', 8],
+['Iran', 6],
+['Puerto Rico', 5],
+['Saint Lucia', 4],
+['Somalia', 4],
+['Indonesia', 4],
+['Spain', 4],
+['Niue', 3],
+['Antigua', 3],
+['Samoa', 3],
+['Solomon Islands', 3],
+['Cayman Islands', 3],
+['Malaysia', 3],
+['Nicaragua', 3],
+['Nepal', 3],
+['Myanmar', 3],
+['Maldives', 2],
+['Oman', 2],
+['Tanzania', 2],
+['Turkey', 2],
+['Mongolia', 2],
+['Vanuatu', 2],
+['Cook Islands', 2],
+['Pacific Ocean', 2],
+['Mozambique', 2],
+['Thailand', 2],
+['Barbados', 2],
+['Italy', 2],
+['Micronesia', 2],
+['South China Sea', 2],
+['Netherlands', 2],
+['Venezuela', 2],
+['Kazakhstan', 2],
+['New Caledonia', 2],
+['Cambodia', 1],
+['Guatemala', 1],
+['Dominican', 1],
+['Cyprus', 1],
+['Grenadines', 1],
+['Guam', 1],
+['Azerbaijan', 1],
+['Kenya', 1],
+['Tajikistan', 1],
+['Lesser Antilles', 1],
+['Tonga', 1],
+['France', 1],
+['Slovakia', 1],
+['Balkans', 1],
+['Dominican Republic', 1],
+['Windward Islands', 1],
+['Mauritius', 1],
+['Portugal', 1],
+['Tokelau', 1],
+['Sint Maarten', 1],
+['Nigeria', 1],
+['Czech Republic', 1],
+['Brunei', 1],
+['in South Atlantic Ocean', 1],
+['Belgium', 1],
+['Denmark', 1],
+['Namibia', 1],
+['Chad', 1],
+['Djibouti', 1],
+['Mariana Islands', 1],
+['Curacao', 1],
+['Sudan', 1],
+['Zimbabwe', 1],
+['Germany', 1],
+['Siberia', 1],
+['Kyrgyzstan', 1],
+['Uganda', 1],
+['Macedonia', 1],
+['Honduras', 1],
+['Singapore', 1],
+['Indian Ocean', 1],
+['Sri Lanka', 1]
+        ]);
+
+        var options = {
+		colorAxis: {colors: ['#FFCBA4','#F75D59','#FF0000','#E41B17','#C24641','#C11B17','#8C001A','#800517']}
+		};
+		
+        var chart = new google.visualization.GeoChart(document.getElementById('regions_div'));
+
+        chart.draw(data, options);
+      }
+    </script>
+  </head>
+  <body>
+    <div id="regions_div" style="width: 420px; height: 280px;"></div>
+  </body>
+</html>

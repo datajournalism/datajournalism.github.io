@@ -1,0 +1,99 @@
+ 
+  <html>
+  <head>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type="text/javascript">
+      google.load("visualization", "1", {packages:["geochart"]});
+      google.setOnLoadCallback(drawRegionsMap);
+
+      function drawRegionsMap() {
+
+        var data = google.visualization.arrayToDataTable([
+			['Country', 'Reportnum'],
+['China', 117],
+['US', 65],
+['Iran', 23],
+['Somalia', 21],
+['Kenya', 19],
+['Vietnam', 13],
+['Russia', 9],
+['Ethiopia', 7],
+['Australia', 7],
+['Cuba', 7],
+['Eritrea', 7],
+['Tanzania', 6],
+['Jamaica', 6],
+['Afghanistan', 5],
+['Somaliland', 5],
+['Portugal', 5],
+['Guatemala', 4],
+['North Korea', 4],
+['Uganda', 4],
+['Fiji', 4],
+['Brazil', 3],
+['Bangladesh', 3],
+['Nepal', 3],
+['Zimbabwe', 3],
+['Djibouti', 3],
+['Sudan', 2],
+['Malawi', 2],
+['Jordan', 2],
+['Papua New Guinea', 2],
+['Thailand', 2],
+['Kazakhstan', 2],
+['Colombia', 2],
+['Moldova', 2],
+['UK', 2],
+['South Korea', 2],
+['Syria', 2],
+['Burma', 2],
+['Tajikistan', 2],
+['Burundi', 2],
+['Taiwan', 2],
+['Madagascar', 1],
+['Canada', 1],
+['Cambodia', 1],
+['Mekong River', 1],
+['Rwanda', 1],
+['Swaziland', 1],
+['Grenada', 1],
+['Venezuela', 1],
+['Czech Republic', 1],
+['Winward Islands', 1],
+['Bhutan', 1],
+['Turkey', 1],
+['Germany', 1],
+['Philippines', 1],
+['Spain', 1],
+['Pakistan', 1],
+['Indonesia', 1],
+['Antigua', 1],
+['Mali', 1],
+['New Zealand', 1],
+['Poland', 1],
+['Romania', 1],
+['Mexico', 1],
+['Singapore', 1],
+['India', 1],
+['Japan', 1],
+['Uzbekistan', 1],
+['Antigua and Barbuda', 1],
+['Dominica', 1],
+['Mongolia', 1],
+['Niue', 1]
+        ]);
+
+        var options = {
+		colorAxis: {colors: ['#FFCBA4','#F75D59','#FF0000','#E41B17','#C24641','#C11B17','#8C001A','#800517']}
+		};
+		
+        var chart = new google.visualization.GeoChart(document.getElementById('regions_div'));
+
+        chart.draw(data, options);
+      }
+    </script>
+  </head>
+  <body>
+    <div id="regions_div" style="width: 420px; height: 280px;"></div>
+  </body>
+</html>

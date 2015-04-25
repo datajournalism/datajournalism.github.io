@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>jQuery UI Tabs - Vertical Tabs functionality</title>
+  <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.3/themes/smoothness/jquery-ui.css">
+  <script src="./js/jquery-1.11.2.js"></script>
+  <script src="./js/jquery-ui.js"></script>
+  <!--<link rel="stylesheet" href="/resources/demos/style.css">-->
+  <script>
+  $(function() {
+    $( "#tabs" ).tabs().addClass( "ui-tabs-vertical ui-helper-clearfix" );
+    $( "#tabs li" ).removeClass( "ui-corner-top" ).addClass( "ui-corner-left" );
+  });
+  </script>
+  <style>
+  
+  .ui-tabs.ui-tabs-vertical {
+    padding: 0;
+    width: 75em;
+	height: 90%;
+}
+.ui-tabs.ui-tabs-vertical .ui-widget-header {
+    border: none;
+}
+.ui-tabs.ui-tabs-vertical .ui-tabs-nav {
+    float: left;
+    width: 12em;
+    background: #CCC;
+    border-radius: 4px 0 0 4px;
+    border-right: 1px solid gray;
+}
+.ui-tabs.ui-tabs-vertical .ui-tabs-nav li {
+    clear: left;
+    width: 100%;
+    margin: 0.2em 0;
+    border: 1px solid gray;
+    border-width: 1px 0 1px 1px;
+    border-radius: 4px 0 0 4px;
+    overflow: hidden;
+    position: relative;
+    right: -2px;
+    z-index: 2;
+}
+.ui-tabs.ui-tabs-vertical .ui-tabs-nav li a {
+    display: block;
+    width: 100%;
+    padding: 0.6em 1em;
+}
+.ui-tabs.ui-tabs-vertical .ui-tabs-nav li a:hover {
+    cursor: pointer;
+}
+.ui-tabs.ui-tabs-vertical .ui-tabs-nav li.ui-tabs-active {
+    margin-bottom: 0.2em;
+    padding-bottom: 0;
+    border-right: 1px solid white;
+}
+.ui-tabs.ui-tabs-vertical .ui-tabs-nav li:last-child {
+    margin-bottom: 10px;
+}
+.ui-tabs.ui-tabs-vertical .ui-tabs-panel {
+    float: left;
+    width: 20em;
+    border-left: 1px solid gray;
+    border-radius: 0;
+    position: relative;
+    left: -1px;
+}
+  
+   </style>
+</head>
+<body>
+ 
+<div id="tabs">
+  <ul>
+  
+    <li><a href="#tabs-1">Hurricane America</a></li>
+    <li><a href="#tabs-2">Flood China</a></li>
+    <li><a href="#tabs-3">Snowstorm America</a></li>
+	<li><a href="#tabs-4">Drought China</a></li>
+	<li><a href="#tabs-5">Earthquake China</a></li>
+	
+  </ul>
+  <div id="tabs-1">
+    <!--<h2>Content heading 1</h2>-->
+		<iframe src = "./wholehtml/UShurricaneindex.html" width="1000px" height="670px" frameBorder = "0"></iframe>  </div>
+  <div id="tabs-2">
+    <!--<h2>Content heading 2</h2>-->
+		<iframe src = "./wholehtml/Chinafloodindex.html" width="1000px" height="670px" frameBorder = "0"></iframe>  </div>
+  <div id="tabs-3">
+    <!--<h2>Content heading 3</h2>-->
+		<iframe src = "./wholehtml/USsnowindex.html" width="1000px" height="670px" frameBorder = "0"></iframe>  </div>
+  
+  <div id="tabs-4">
+		<iframe src = "./wholehtml/Chinadroughtindex.html" width="1000px" height="670px" frameBorder = "0"></iframe></div>
+  
+  <div id="tabs-5">
+		<iframe src = "./wholehtml/Chinaearthquakeindex.html" width="1000px" height="670px" frameBorder = "0"></iframe></div>
+  
+  </div>
+
+ 
+</body>
+</html>

@@ -1,0 +1,126 @@
+	
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>1998-2014 BBC CNN Climate Disaster Report</title>
+  <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.3/themes/smoothness/jquery-ui.css">
+  <script src="./js/jquery-1.11.2.js"></script>
+  <script src="./js/jquery-ui.js"></script>
+  <!--<link rel="stylesheet" href="/resources/demos/style.css">-->
+  
+  <style type="text/css">
+		.tabs {
+    width:80%;
+    display:inline-block;
+}
+ 
+    /*----- Tab Links -----*/
+    /* Clearfix */
+    .tab-links:after {
+        display:block;
+        clear:both;
+        content:'';
+    }
+ 
+    .tab-links li {
+        margin:0px 5px;
+        float:left;
+        list-style:none;
+    }
+ 
+        .tab-links a {
+            padding:9px 5px;
+            display:inline-block;
+            border-radius:1px 1px 0px 0px;
+            background:#7FB5DA;
+            font-size:5px;
+            font-weight:100;
+            color:#4c4c4c;
+            transition:all linear 0.15s;
+        }
+ 
+        .tab-links a:hover {
+            background:#a7cce5;
+            text-decoration:none;
+        }
+ 
+    li.active a, li.active a:hover {
+        background:#fff;
+        color:#4c4c4c;
+    }
+ 
+    /*----- Content of Tabs -----*/
+    .tab-content {
+        padding:5px;
+        border-radius:3px;
+        box-shadow:-1px 1px 1px rgba(0,0,0,0.15);
+        background:#fff;
+    }
+ 
+        .tab {
+            display:none;
+        }
+ 
+        .tab.active {
+            display:block;
+        }	
+	</style>
+	
+	<style>
+		h2 {
+    display: block;
+    font-size: 1.5em;
+    margin-top: 0.83em;
+    margin-bottom: 0.83em;
+    margin-left: 0;
+    margin-right: 0;
+    font-weight: bold;
+	color: darkblue;
+}
+	</style>
+  
+  <script>
+  $(function() {
+    $( "#tabs" ).tabs();
+  });
+  </script>
+</head>
+<body>
+
+<h2 align="center">1998-2014 BBC CNN Climate Disaster Report</h2>
+ 
+<div id="tabs">
+  <ul>
+    <li><a href="#tabs-1">BBC&CNN Climate Disaster Report</a></li>
+    <li><a href="#tabs-2">Locate Distribution</a></li>
+    <li><a href="#tabs-3">Top Locate Report Date Distribution</a></li>
+	<li><a href="#tabs-4">Acknowledgements</a></li>
+  </ul>
+  <div id="tabs-1">
+    <iframe src = "./1maptimeline/index_verticaltab.html" width="100%" height="550px" frameBorder = "0"></iframe>
+  </div>
+  <div id="tabs-2">
+	<iframe src = "./2countryrate/index.html" width="100%" height="550px" frameBorder = "0"></iframe>
+  </div>
+  <div id="tabs-3">
+    <iframe src = "./3reportdateshow/index_verticaltab.html" width="100%" height="550px" frameBorder = "0"></iframe>
+  </div>
+  <div id="tabs-4">
+    <p><font color="darkblue">I would like to express my gratitude to all friends who helped me in this project.</font></p>
+	<p><font color="darkblue">Thank all of you to give me strong technical support.</font></p>
+	<p><font color="darkblue">For respect, list all the technical advisors below:</font></p>
+	<p><font color="darkblue">Xu Wang (Ph.D., Postdoc Research Associate, Plant Pathology Department, Kansas State University)</font></p>
+	<p><font color="darkblue">Chung-hong Chan(Journalism and Media Studies Centre, The University of Hong Kong)</font></p>
+	<p><font color="darkblue">Hai Liang(The University of Hong Kong)</font></p>
+
+  </div>
+  
+
+
+</div>
+ 
+ 
+</body>
+</html>
+

@@ -1,0 +1,61 @@
+ 
+  <html>
+  <head>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type="text/javascript">
+      google.load("visualization", "1", {packages:["geochart"]});
+      google.setOnLoadCallback(drawRegionsMap);
+
+      function drawRegionsMap() {
+
+        var data = google.visualization.arrayToDataTable([
+			['Country', 'Reportnum'],
+['US', 140],
+['China', 48],
+['Tajikistan', 16],
+['Iran', 14],
+['Russia', 14],
+['Kyrgyzstan', 8],
+['Japan', 8],
+['Pakistan', 7],
+['Mongolia', 6],
+['Kazakhstan', 6],
+['Nepal', 5],
+['Afghanistan', 4],
+['Turkey', 3],
+['North Korea', 3],
+['Egypt', 3],
+['UK', 3],
+['South Korea', 3],
+['Caribbean', 2],
+['France', 2],
+['Kashmir', 2],
+['India', 2],
+['Sudan', 1],
+['Lebanon', 1],
+['Ethiopia', 1],
+['Slovakia', 1],
+['Norway', 1],
+['Australia', 1],
+['Siberia', 1],
+['Denmark', 1],
+['Moldova', 1],
+['Belarus', 1],
+['New Zealand', 1],
+['Mexico', 1]
+        ]);
+
+        var options = {
+		colorAxis: {colors: ['#FFCBA4','#F75D59','#FF0000','#E41B17','#C24641','#C11B17','#8C001A','#800517']}
+		};
+		
+        var chart = new google.visualization.GeoChart(document.getElementById('regions_div'));
+
+        chart.draw(data, options);
+      }
+    </script>
+  </head>
+  <body>
+    <div id="regions_div" style="width: 420px; height: 280px;"></div>
+  </body>
+</html>

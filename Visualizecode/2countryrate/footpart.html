@@ -1,0 +1,16 @@
+        ]);
+
+        var options = {
+		colorAxis: {colors: ['#FFCBA4','#F75D59','#FF0000','#E41B17','#C24641','#C11B17','#8C001A','#800517']}
+		};
+		
+        var chart = new google.visualization.GeoChart(document.getElementById('regions_div'));
+
+        chart.draw(data, options);
+      }
+    </script>
+  </head>
+  <body>
+    <div id="regions_div" style="width: 420px; height: 280px;"></div>
+  </body>
+</html>

@@ -1,0 +1,118 @@
+	
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>1998-2014 BBC CNN Climate Disaster Report</title>
+  <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.3/themes/smoothness/jquery-ui.css">
+  <script src="./js/jquery-1.11.2.js"></script>
+  <script src="./js/jquery-ui.js"></script>
+  <!--<link rel="stylesheet" href="/resources/demos/style.css">-->
+  
+  <style type="text/css">
+		.tabs {
+    width:80%;
+    display:inline-block;
+}
+ 
+    /*----- Tab Links -----*/
+    /* Clearfix */
+    .tab-links:after {
+        display:block;
+        clear:both;
+        content:'';
+    }
+ 
+    .tab-links li {
+        margin:0px 5px;
+        float:left;
+        list-style:none;
+    }
+ 
+        .tab-links a {
+            padding:9px 5px;
+            display:inline-block;
+            border-radius:1px 1px 0px 0px;
+            background:#7FB5DA;
+            font-size:5px;
+            font-weight:100;
+            color:#4c4c4c;
+            transition:all linear 0.15s;
+        }
+ 
+        .tab-links a:hover {
+            background:#a7cce5;
+            text-decoration:none;
+        }
+ 
+    li.active a, li.active a:hover {
+        background:#fff;
+        color:#4c4c4c;
+    }
+ 
+    /*----- Content of Tabs -----*/
+    .tab-content {
+        padding:5px;
+        border-radius:3px;
+        box-shadow:-1px 1px 1px rgba(0,0,0,0.15);
+        background:#fff;
+    }
+ 
+        .tab {
+            display:none;
+        }
+ 
+        .tab.active {
+            display:block;
+        }	
+	</style>
+  
+  <script>
+  $(function() {
+    $( "#tabs" ).tabs();
+  });
+  </script>
+</head>
+<body>
+
+<h2>1998-2014 BBC CNN Climate Disaster Report</h2>
+ 
+<div id="tabs">
+  <ul>
+    <li><a href="#tabs-1">BBC All Climate</a></li>
+    <li><a href="#tabs-2">CNN All Climate</a></li>
+    <li><a href="#tabs-3">Hurricane</a></li>
+	<li><a href="#tabs-4">Flood</a></li>
+	<li><a href="#tabs-5">Snow</a></li>
+	<li><a href="#tabs-6">Drought</a></li>
+	<li><a href="#tabs-7">Earthquake</a></li>
+  </ul>
+  <div id="tabs-1">
+    <iframe src = "./examples/BBCallweathertimeline.html" width="100%" height="500px" frameBorder = "0"></iframe>
+  </div>
+  <div id="tabs-2">
+	<iframe src = "./examples/CNNallweathertimeline.html" width="100%" height="500px" frameBorder = "0"></iframe>
+  </div>
+  <div id="tabs-3">
+    <iframe src = "./examples/BBCCNNhurricanetimeline.html" width="100%" height="500px" frameBorder = "0"></iframe>
+  </div>
+  <div id="tabs-4">
+    <iframe src = "./examples/BBCCNNfloodtimeline.html" width="100%" height="500px" frameBorder = "0"></iframe>
+  </div>
+  <div id="tabs-5">
+    <iframe src = "./examples/BBCCNNsnowtimeline.html" width="100%" height="500px" frameBorder = "0"></iframe>
+  </div>
+  <div id="tabs-6">
+    <iframe src = "./examples/BBCCNNdroughttimeline.html" width="100%" height="500px" frameBorder = "0"></iframe>
+  </div>
+  <div id="tabs-7">
+    <iframe src = "./examples/BBCCNNearthquaketimeline.html" width="100%" height="500px" frameBorder = "0"></iframe>
+  </div>
+
+
+</div>
+ 
+ 
+</body>
+</html>
+
