@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Hello ZingChart World</title>
+
+
+<!--  Latest compiled and minified JavaScript  -->
+<script src="http://cdn.zingchart.com/zingchart.min.js"></script>
+<!--  Modules directory needed to use certain chart types  -->
+<script>zingchart.MODULESDIR="http://cdn.zingchart.com/modules/";</script>
+
+
+<script>
+var myChart=
+{
+"graphset":[
+    {
+        "type":"piano",
+        "background-color":"#FFFFFF #FFFFFF",
+        "fill-type":"radial",
+        "plotarea":{
+            "margin":"30 80 60 80",
+            "background-color":"none"
+        },
+        "scale-x":{
+            "values":["1998","1999","2000","2001","2002","2003","2004","2005","2006","2007","2008","2009","2010","2011","2012","2013","2014"],
+            "text-align":"right",
+            "items-overlap":true,
+            "max-labels":999,
+            "line-color":"#000",
+            "line-width":"2px",
+            "alpha":0.5,
+            "guide":{
+                "visible":false
+            },
+            "label":{
+                "text":"Local Time for Call Center Region",
+                "padding-top":"15px",
+                "font-family":"arial",
+                "font-size":"12px",
+                "font-color":"#fff",
+                "bold":true
+            },
+            "item":{
+                "font-angle":-90,
+                "padding-top":"5px",
+                "font-color":"#93abc9",
+                "font-family":"arial",
+                "font-size":"10px",
+                "rules":[
+                    {
+                        "rule":"%i % 2 != 0",
+                        "visible":false
+                    }
+                ]
+            },
+            "tick":{
+                "visible":false
+            }
+        },
+        "scale-y":{
+            "values":["Jan W0","W1","W2","W3","Feb W4","W5","W6","W7","W8","W9","W10","W11","W12","W13","W14","W15","W16","W17","W18","W19","W20","W21","W22","W23","W24","W25","W26","W27","W28","W29","W30","W31","W32","W33","W34","W35","W36","W37","W38","W39","W40","W41","W42","W43","W44","W45","W46","W47","W48","W49","W50","W51","W52","W53"],
+            "line-color":"#000",
+            "line-width":"2px",
+            "alpha":0.5,
+            "guide":{
+                "visible":false
+            },
+            "label":{
+                "text":"Call Center Location",
+                "padding-right":"20px",
+                "font-family":"arial",
+                "font-size":"12px",
+                "font-color":"#fff",
+                "bold":true
+            },
+            "tick":{
+                "line-color":"#000",
+                "alpha":0.5
+            },
+            "item":{
+                "padding-right":"5px",
+                "font-color":"#93abc9",
+                "font-family":"arial",
+                "font-size":"10px",
+                "text-align":"right"
+            }
+        },
+		
+		
+		
+        "plot":{
+            "value-box":{
+                "visible":false
+            },
+            "aspect":"brightness",
+            "rules":[
+                {
+                    "rule":"%v ==1 ",
+                    "background-color":"#7000ac"
+                },
+                {
+                    "rule":"%v == 0",
+                    "background-color":"#FFFFFF"
+                }
+            ]
+        },
+        "tooltip":{
+            "shadow":0,
+            "text":"%y",
+            "font-color":"#fff",
+            "font-family":"Arial",
+            "font-size":"10px",
+            "font-weight":"normal",
+            "padding":"5px 10px",
+            "border-radius":"8px",
+            "border-width":"0px",
+            "border-color":"none"
+        },
+        "scale-x-2":{
+            "line-color":"#000",
+            "line-width":"2px",
+            "alpha":0.5,
+            "tick":{
+                "visible":false
+            },
+            "item":{
+                "visible":false
+            },
+            "guide":{
+                "visible":false
+            }
+        },
+		
+		
+		
+		
+        "scale-y-2":{
+		    "values":["Jan W0","W1","W2","W3","Feb W4","W5","W6","W7","W8","W9","W10","W11","W12","W13","W14","W15","W16","W17","W18","W19","W20","W21","W22","W23","W24","W25","W26","W27","W28","W29","W30","W31","W32","W33","W34","W35","W36","W37","W38","W39","W40","W41","W42","W43","W44","W45","W46","W47","W48","W49","W50","W51","W52","W53"],
+            "line-color":"#000",
+            "line-width":"2px",
+            "alpha":0.5,
+            "tick":{
+                "line-color":"#000",
+                "alpha":0.5
+            },
+            "item":{
+                "padding-right":"5px",
+                "font-color":"#93abc9",
+                "font-family":"arial",
+                "font-size":"10px",
+                "text-align":"right"
+            },
+            "guide":{
+                "visible":false
+            }
+        },
+		
+		
+		
+        "series":[{
+"values":[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0],
+"text":"W1"
+},
+{
+"values":[0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 1, 0, 0, 0, 0, 0],
+"text":"W2"
+},
+{
+"values":[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 1, 0, 0, 0, 0],
+"text":"W3"
+},
+{
+"values":[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+"text":"W4"
+},
+{
+"values":[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 1, 0, 0, 0, 0],
+"text":"W5"
+},
+{
+"values":[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 1, 1, 1, 0],
+"text":"W6"
+},
+{
+"values":[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+"text":"W7"
+},
+{
+"values":[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 1, 0],
+"text":"W8"
+},
+{
+"values":[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+"text":"W9"
+},
+{
+"values":[0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0],
+"text":"W10"
+},
+{
+"values":[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0],
+"text":"W11"
+},
+{
+"values":[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+"text":"W12"
+},
+{
+"values":[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+"text":"W13"
+},
+{
+"values":[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+"text":"W14"
+},
+{
+"values":[0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0, 0],
+"text":"W15"
+},
+{
+"values":[0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0],
+"text":"W16"
+},
+{
+"values":[0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 1, 0, 1, 0, 0, 0],
+"text":"W17"
+},
+{
+"values":[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0],
+"text":"W18"
+},
+{
+"values":[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+"text":"W19"
+},
+{
+"values":[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+"text":"W20"
+},
+{
+"values":[0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0],
+"text":"W21"
+},
+{
+"values":[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+"text":"W22"
+},
+{
+"values":[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+"text":"W23"
+},
+{
+"values":[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+"text":"W24"
+},
+{
+"values":[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+"text":"W25"
+},
+{
+"values":[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+"text":"W26"
+},
+{
+"values":[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+"text":"W27"
+},
+{
+"values":[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+"text":"W28"
+},
+{
+"values":[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+"text":"W29"
+},
+{
+"values":[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+"text":"W30"
+},
+{
+"values":[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+"text":"W31"
+},
+{
+"values":[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+"text":"W32"
+},
+{
+"values":[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+"text":"W33"
+},
+{
+"values":[0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0],
+"text":"W34"
+},
+{
+"values":[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+"text":"W35"
+},
+{
+"values":[0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0],
+"text":"W36"
+},
+{
+"values":[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+"text":"W37"
+},
+{
+"values":[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+"text":"W38"
+},
+{
+"values":[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+"text":"W39"
+},
+{
+"values":[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+"text":"W40"
+},
+{
+"values":[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0],
+"text":"W41"
+},
+{
+"values":[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 1, 0],
+"text":"W42"
+},
+{
+"values":[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0],
+"text":"W43"
+},
+{
+"values":[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0],
+"text":"W44"
+},
+{
+"values":[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0],
+"text":"W45"
+},
+{
+"values":[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 1, 0],
+"text":"W46"
+},
+{
+"values":[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1],
+"text":"W47"
+},
+{
+"values":[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+"text":"W48"
+},
+{
+"values":[0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0],
+"text":"W49"
+},
+{
+"values":[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1],
+"text":"W50"
+},
+{
+"values":[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0],
+"text":"W51"
+},
+{
+"values":[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+"text":"W52"
+},
+{
+"values":[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+"text":"W53"
+}
+			
+			
+        ]
+    }
+]
+};
+
+window.onload=function(){
+    zingchart.render({
+        id:"myChartDiv",
+        data:myChart,
+        height:450,
+		width:"100%"
+		
+    });
+};
+</script>
+
+
+</head>
+<body> 
+<div style="text-align:center"><font size="9" color="darkblue">China Snow</font></div>
+<div id="myChartDiv"></div>
+</body>
+</html>

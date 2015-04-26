@@ -1,0 +1,123 @@
+ 
+  <html>
+  <head>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type="text/javascript">
+      google.load("visualization", "1", {packages:["geochart"]});
+      google.setOnLoadCallback(drawRegionsMap);
+
+      function drawRegionsMap() {
+
+        var data = google.visualization.arrayToDataTable([
+			['Country', 'Reportnum'],
+['China', 106],
+['Iran', 98],
+['Indonesia', 66],
+['Turkey', 59],
+['Japan', 58],
+['Taiwan', 47],
+['Pakistan', 27],
+['Kyrgyzstan', 18],
+['Tajikistan', 17],
+['US', 17],
+['Russia', 15],
+['Kazakhstan', 13],
+['Philippines', 10],
+['India', 8],
+['Afghanistan', 8],
+['Algeria', 8],
+['Haiti', 7],
+['Uzbekistan', 6],
+['Dominica', 4],
+['Jamaica', 4],
+['South Korea', 4],
+['Caribbean', 4],
+['Malaysia', 4],
+['Siberia', 4],
+['Burma', 4],
+['Egypt', 4],
+['Ethiopia', 3],
+['New Zealand', 3],
+['Solomon Islands', 3],
+['Mongolia', 3],
+['Rwanda', 3],
+['Vietnam', 3],
+['Chile', 3],
+['Macedonia', 3],
+['Turkmenistan', 2],
+['Saudi Arabia', 2],
+['Tanzania', 2],
+['Antigua', 2],
+['Albania', 2],
+['Azerbaijan', 2],
+['Saint Lucia', 2],
+['Vanuatu', 2],
+['Cuba', 2],
+['Romania', 2],
+['Thailand', 2],
+['Morocco', 2],
+['Lebanon', 2],
+['Fiji', 2],
+['Italy', 2],
+['Bhutan', 2],
+['Nepal', 2],
+['Papua New Guinea', 2],
+['Mexico', 2],
+['Greece', 2],
+['Laos', 1],
+['Slovenia', 1],
+['Guatemala', 1],
+['Germany', 1],
+['Dominican', 1],
+['Oman', 1],
+['Kenya', 1],
+['Eritrea', 1],
+['Hungary', 1],
+['Peru', 1],
+['Nevis', 1],
+['Montenegro', 1],
+['Cayman Islands', 1],
+['Kashmir', 1],
+['Bulgaria', 1],
+['Portugal', 1],
+['Cyprus', 1],
+['Uganda', 1],
+['Nigeria', 1],
+['Ecuador', 1],
+['Belgium', 1],
+['Denmark', 1],
+['Moldova', 1],
+['Croatia', 1],
+['Barbuda', 1],
+['Tunisia', 1],
+['Djibouti', 1],
+['Mariana Islands', 1],
+['Barbados', 1],
+['Madagascar', 1],
+['Solomon Sea', 1],
+['Jordan', 1],
+['Martinique', 1],
+['Poland', 1],
+['Mauritania', 1],
+['UK', 1],
+['North Korea', 1],
+['Guyana', 1],
+['Serbia', 1],
+['Indian Ocean', 1],
+['Sri Lanka', 1]
+        ]);
+
+        var options = {
+		colorAxis: {colors: ['#FFCBA4','#F75D59','#FF0000','#E41B17','#C24641','#C11B17','#8C001A','#800517']}
+		};
+		
+        var chart = new google.visualization.GeoChart(document.getElementById('regions_div'));
+
+        chart.draw(data, options);
+      }
+    </script>
+  </head>
+  <body>
+    <div id="regions_div" style="width: 420px; height: 280px;"></div>
+  </body>
+</html>
