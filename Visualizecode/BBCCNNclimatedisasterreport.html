@@ -79,6 +79,16 @@
 	color: darkblue;
 }
 	</style>
+	
+	<style>
+		p.small {
+			line-height: 0.6;
+			color: darkblue;
+		}
+		p {
+			text-indent: 50px;
+		}
+	</style>
   
   <script>
   $(function() {
@@ -92,28 +102,74 @@
  
 <div id="tabs">
   <ul>
-    <li><a href="#tabs-1">BBC&CNN Climate Disaster Report</a></li>
-    <li><a href="#tabs-2">Locate Distribution</a></li>
-    <li><a href="#tabs-3">Top Locate Report Date Distribution</a></li>
-	<li><a href="#tabs-4">Acknowledgements</a></li>
+	<li><a href="#tabs-1">Introduction</a></li>
+    <li><a href="#tabs-2">BBC&CNN Climate Disaster Report</a></li>
+    <li><a href="#tabs-3">Locate Distribution</a></li>
+    <li><a href="#tabs-4">Top Locate Report Date Distribution</a></li>
+	<li><a href="#tabs-5">Acknowledgement</a></li>
   </ul>
+  
   <div id="tabs-1">
-    <iframe src = "./1maptimeline/index_verticaltab.html" width="100%" height="550px" frameBorder = "0"></iframe>
+    <h4><font color="darkblue">What this project do:</font></h4>
+	<p class="small"><font color="darkblue">See those strongly affected human’s Climate Disasters during 1998-2014, using BBC & CNN news report data.</font></p>
+	<p class="small"><font color="darkblue">Find the most frequently affected country of each specific Climate Disaster.</font></p>
+	<p class="small"><font color="darkblue">Find the report date time trend, which can reflect climate change.</font></p>
+	
+	<h4><font color="darkblue">Why use media data, but not official climate data:</font></h4>
+	<p class="small"><font color="darkblue">Media always smells the hot issues, which are closely related to our life. The reported Climate Disasters must already affect human’s life.</font></p>
+	<p class="small"><font color="darkblue">But if we use official climate data, it only tells the climate issue, we can not know how it relates to people’s life.</font></p>
+	
+	<h4><font color="darkblue">Data Source:</font></h4>
+	<p class="small"><font color="darkblue">Get original data from 'Factiva - Dow Jones' database, BBC, CNN news from 1998 to 2014, in these categories:</font></p>
+	<p class="small"><font color="darkblue">Natural Disaster/ Environment/ Weather/ Climate Change</font></p>
+	
+	<h4><font color="darkblue">Data Extraction:</font></h4>
+	<p class="small"><font color="darkblue">Climate Disaster key words, Report Date, Location</font></p>
+	
+	<h4><font color="darkblue">Technical Skills:</font></h4>
+	<p class="small"><font color="darkblue">Data Mining: Use 'Natural Language Toolkit' and Stanford NER in Python to extract location in news report</font></p>
+	<p class="small"><font color="darkblue">Data Analysis: Python</font></p>
+	<p class="small"><font color="darkblue">Visualization: Python, HTML, JavaScript</font></p>
+	
+	<h4><font color="darkblue">What we find:</font></h4>
+	<p class="small"><font color="darkblue">(1) News report Regional Focus:</font></p>
+	<p class="small"><font color="darkblue">CNN Climate Disaster reports mainly focus on United States, fewer Europe and Asia</font></p>
+	<p class="small"><font color="darkblue">BBC Climate Disaster reports mainly focus on Europe and Asia, fewer America</font></p>
+	
+	<p class="small"><font color="darkblue">(2) What Climate Disasters are more likely to report:</font></p>
+	<p class="small"><font color="darkblue">Hurricane, Flood, Drought, Snowstorm, Earthquake</font></p>
+	
+	<p class="small"><font color="darkblue">(3) Disaster report location distribution:</font></p>
+	<p class="small"><font color="darkblue">United States and China occupy top two Climate Disaster report countries, people are more likely to focus on Climate Issue of these<br><br> two countries</font></p>
+	
+	<p class="small"><font color="darkblue">(4) Disaster report date distribution:</font></p>
+	<p class="small"><font color="darkblue">Before working on this project, I have a hypothesis that hurricane, flood and drought maybe occur frequently in summer, and by looking<br><br> at the report time trend, we can find how the climate change, but the result surprises me:</font></p>
+	<p class="small"><font color="darkblue">Hurricane in United States, Flood in China and Drought in China can occur almost the whole year, not only focus on several months in<br><br> summer. That is mainly because both United States and China across large range of longitude and latitude. The climate is so different from <br><br>North to South, from East to West.</font></p>
+	<p class="small"><font color="darkblue">But the Snowstorm in United States is regularly happens at the beginning and end of the year.</font></p>
+	
+	<h4><font color="darkblue">Improvement:</font></h4>
+	<p class="small"><font color="darkblue">We can find the related issue caused by Climate Disaster (Eg: jobless, accident, flight delay, price raise, etc…)</font></p>
+	<p class="small"><font color="darkblue">Connect Climate Disasters to Temperature</font></p>
+	<p class="small"><font color="darkblue">Economic cost to solve the Climate Disaster</font></p>
+	
+	
+	
   </div>
   <div id="tabs-2">
-	<iframe src = "./2countryrate/index.html" width="100%" height="550px" frameBorder = "0"></iframe>
+    <iframe src = "./1maptimeline/index_verticaltab.html" width="100%" height="550px" frameBorder = "0"></iframe>
   </div>
   <div id="tabs-3">
-    <iframe src = "./3reportdateshow/index_verticaltab.html" width="100%" height="550px" frameBorder = "0"></iframe>
+	<iframe src = "./2countryrate/index.html" width="100%" height="550px" frameBorder = "0"></iframe>
   </div>
   <div id="tabs-4">
-    <p><font color="darkblue">I would like to express my gratitude to all friends who helped me in this project.</font></p>
-	<p><font color="darkblue">Thank all of you to give me strong technical support.</font></p>
+    <iframe src = "./3reportdateshow/index_verticaltab.html" width="100%" height="550px" frameBorder = "0"></iframe>
+  </div>
+  <div id="tabs-5">
+    <p><font color="darkblue">I would like to express my gratitude to all friends who helped me in this project.Thank all of you to give me strong technical support.</font></p>
 	<p><font color="darkblue">For respect, list all the technical advisors below:</font></p>
 	<p><font color="darkblue">Xu Wang (Ph.D., Postdoc Research Associate, Plant Pathology Department, Kansas State University)</font></p>
 	<p><font color="darkblue">Chung-hong Chan(Journalism and Media Studies Centre, The University of Hong Kong)</font></p>
 	<p><font color="darkblue">Hai Liang(The University of Hong Kong)</font></p>
-
   </div>
   
 
